@@ -1,0 +1,60 @@
+                    <footer class="section section-footer">
+                        <div class="container footer-container">
+                            <div class="paragraph-cont">
+                                <a class="logo logo-footer" href="./index.html">Web<span class="logo-part">studio</span></a>
+                                <p class="text-footer">Increase the flow of customers and sales for your business with digital marketing &
+                                    growth
+                                    solutions.</p>
+                            </div>
+                            <div class="footer-socials">
+                                <p class="text-footer social">Social media</p>
+                                <ul class="list-team-socials footer-socials-list">
+                                    <li class="item-team-socials">
+                                        <a class="link-socials">
+                                            <svg class="svg-socials" width="24" height="24">
+                                                <use href="./images/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="item-team-socials">
+                                        <a class="link-socials">
+                                            <svg class="svg-socials" width="24" height="24">
+                                                <use href="./images/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="item-team-socials">
+                                        <a class="link-socials">
+                                            <svg class="svg-socials" width="24" height="24">
+                                                <use href="./images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="item-team-socials">
+                                        <a class="link-socials">
+                                            <svg class="svg-socials" width="24" height="24">
+                                                <use href="./images/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                    
+                                </ul>
+                    
+                            </div>
+
+                            <div class="wrap-subscribe">
+                                <p class="text-subscribe">Subscribe</p>
+                                <form class="form-footer">
+                                    <label class="subscribe-label" for="email">
+                                        <input class="subscribe-input" type="email" name="useremail" id="email" placeholder="E-mail">
+                                    </label>
+                                    <button class="subscribe-buttton" type="submit">Subscribe
+                                        <svg class="subscribe-icon" width="24" height="24">
+                                            <use href="./images/icons.svg#icon-frame"></use>
+                                        </svg>
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </footer>
