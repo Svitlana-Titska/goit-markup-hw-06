@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -601,8 +602,8 @@ text-align: center;
 
 .contacts-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -626,7 +627,7 @@ margin-top: 0;
   margin: 0 auto;
   gap: 72px;
   flex-wrap: wrap;
-  justify-content: center;
+   justify-content: center;
 }
 
 .contacts-title-text {
@@ -1038,11 +1039,14 @@ margin-top: 0;
     row-gap: 72px;
     column-gap: 24px;
   }
-
+.footer-form {
+  display: block;
+}
   .footer-paragraf {
     text-align: left;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 16px;
   }
   .footer-social-text {
     text-align: left;
