@@ -1,3 +1,6 @@
+.hidden {
+  display: none;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -218,6 +221,7 @@ button {
 /*    mobile-menu   */
 
 .mobile-menu {
+  font-style: normal;
   position: fixed;
   top: 0;
   left: 0;
@@ -395,6 +399,14 @@ button {
   margin-right: auto;
 }
 
+  @media screen and (min-resolution: 192dpi) {
+      .section-header {
+        background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+          url(../images/hero/background-mobile-2x.jpg);
+      }
+    }
+
 .studio .container {
   display: block;
   margin-left: auto;
@@ -445,8 +457,32 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/hero/background-tablet-2x.jpg');
+      url('../images/hero/background-tablet-1x.jpg');
   }
+}
+
+@media screen and (min-resolution: 192dpi) {
+          .section-header {
+            background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/background-tablet-2x.jpg);
+          }
+        }
+    
+         @media screen and (min-width: 1158px) {
+          .section-header {
+            background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/background-desktop-1x.jpg);
+            max-width: 1440px;
+            padding-top: 188px;
+            padding-bottom: 188px;
+          }
+    
+          @media screen and (min-resolution: 192dpi) {
+            .section-header {
+              background-image: linear-gradient(to bottom,
+                  rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/background-desktop-2x.jpg);
+            }
+          }
 
   .studio-title {
     max-width: 496px;
@@ -500,7 +536,7 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  align-items: flex-start;
+text-align: center;
 }
 
 .approach-text {
@@ -516,9 +552,12 @@ button {
     width: 356px;
     width: calc((100% - 24px) / 2);
   }
-
+.approach-title {
+  text-align: left;
+}
   .approach-list {
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
 }
 
@@ -581,16 +620,16 @@ button {
   color: #2e2f42;
   align-items: center;
   margin-bottom: 72px;
-  margin-left: auto;
-  margin-right: auto;
+margin-top: 0;
 }
 
 .contacts-list {
   display: flex;
   align-items: center;
-  margin-top: 0;
-  gap: 24px;
+  margin: 0 auto;
+  gap: 72px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contacts-title-text {
@@ -665,50 +704,55 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .contacts-container {
+ max-width: 584px;
+}
+
   .contacts-list {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
+   gap: 24px;
+    row-gap: 64px;
   }
 
   .contacts-item {
-    gap: 64px;
     width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
+    .contacts-container {
+ max-width: 1128px;
+}
+  
   .contacts {
     padding: 120px 0;
   }
 
   .contacts-list {
-    column-gap: 24px;
-    row-gap: 48px;
+         display: flex;
+   align-items: center;
+    justify-content: center;
+    flex-direction: row;
     gap: 24px;
+    padding-left: 0;
+    margin: 0;
   }
 
-  .contacts-list li:last-child {
-    margin-right: 0;
-  }
-
-  .contacts-item {
+   .contacts-item {
     width: calc((100% - 72px) / 4);
   }
+
 }
 
 /*  main portfolio  */
 
 .portfolio {
+    display: flex;
+  align-items: center;
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
 .portfolio-title {
-  display: block;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -721,15 +765,14 @@ button {
 }
 .portfolio-list {
   display: flex;
+  max-width: 288px;
   flex-wrap: wrap;
-  appearance: none;
-  justify-content: center;
-  padding-top: 0;
-  gap: 24px 32px;
+  gap: 48px;
+  margin: 0 auto;
+  padding-left: 0;
 }
 
 .portfolio-item {
-   max-width: 288px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #dcdcdc;
@@ -754,6 +797,7 @@ button {
   color: #2e2f42;
   margin-bottom: 8px;
   white-space: nowrap;
+   margin-top: 0;
 }
 
 .portfolio-text {
@@ -770,10 +814,12 @@ button {
 
 @media screen and (min-width: 768px) {
   .portfolio-item {
-    width: 356px;
     width: calc((100% - 24px) / 2);
-       row-gap: 72px;
-    column-gap: 24px;
+  }
+  .portfolio-list {
+     max-width: 736px;
+    gap: 24px;
+     row-gap: 72px;
   }
 
 }
@@ -784,13 +830,15 @@ button {
     padding-bottom: 120px;
   }
 
+   .portfolio-list {
+    max-width: 1128px;
+    row-gap: 48px;
+   }
+
  .portfolio-item {
+  width: calc((100% - 48px) / 3);
   border-bottom: 1px solid #dcdcdc;
-  margin-right: 24px;
-  row-gap: 48px;
-  box-shadow: none;
-  width: 360px;
-  width: calc((100% - 24px) / 3);
+ box-shadow: none;
 }
  
   .portfolio-item.tumba:hover {
@@ -833,7 +881,6 @@ button {
 .page-footer {
   background-color: #2e2f42;
   padding: 96px 0;
-  width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -985,9 +1032,6 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .page-footer {
-    width: 758px;
-  }
 
   .footer-container {
     justify-content: flex-start;
@@ -1026,7 +1070,6 @@ button {
 @media screen and (min-width: 1158px) {
   .page-footer {
     padding: 100px 0;
-    width: 1440px;
   }
 
   .footer-container {
@@ -1050,17 +1093,16 @@ button {
 }
 
 /*    modal-overlay   */
-
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+   z-index: 999;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1204,9 +1246,8 @@ button {
   color: #8e8f99;
 }
 
-.checkbox {
+.checkbox-btn {
   margin-bottom: 24px;
-  
 }
 
 .visually-hidden.checkbox {
@@ -1216,13 +1257,14 @@ button {
 
 .label-checkbox {
   display: flex;
-  flex-shrink: 1;
+  flex-shrink: 0;
   white-space: wrap;
   align-items: center;
+  cursor: pointer;
 }
 
 .castom-checkbox {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -1241,8 +1283,18 @@ button {
   border: none;
   fill: #f4f4fd;
 }
+
+.together-checkbox {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.1;
+letter-spacing: 0.04em;
+color: #8e8f99;
+}
+
 .checkbox-link {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .checkbox-btn-submit {
@@ -1271,4 +1323,7 @@ button {
   min-height: 584px;
 }
 }
+
+
+
 

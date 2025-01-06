@@ -1,0 +1,127 @@
+
+
+.our-team-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.our-team-list-item {
+  background-color: #FFFFFF;
+  border-radius: 0 0 4px 4px;
+
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+.caption {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px 0 32px;
+}
+.our-team-h {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.our-team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+  margin-bottom: 8px;
+}
+.svg-social-media-list {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  gap: 24px;
+
+}
+.svg-social-media-conteiner {
+  background-color: #4d5ae5;
+ border-radius: 50%;
+  justify-content: space-between;
+
+}
+
+.svg-social-media-action {
+  display: flex;
+
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  padding: 0px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.svg-social-media {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: none;
+  fill: #f4f4fd;
+}
+
+.svg-social-media-action:hover {
+  background-color: #404bbf
+}
+
+.svg-social-media-action:focus {
+  background-color: #404bbf
+}
+@media screen and (min-width: 768px) {
+  .our-team-list {
+      gap: 24px;
+        row-gap: 64px;
+}
+@media screen and (min-width: 1158px) {
+  .our-team {
+      padding-top: 120px;
+      padding-bottom: 120px;
+  
+    }
+  .our-team-list { 
+  display: flex;
+   align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+    padding-left: 0;
+    margin: 0;
+}
+media 768 .contacts-list {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+media 1158 .contacts {
+  padding: 120px 0;
+}
+
+.contacts-list {
+  column-gap: 24px;
+  row-gap: 48px;
+  gap: 24px;
+}
+
+.contacts-list li:last-child {
+  margin-right: 0;
+}
+
+.contacts-item {
+  width: calc((100% - 72px) / 4);
+}
