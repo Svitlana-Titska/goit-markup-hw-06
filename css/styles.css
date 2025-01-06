@@ -1265,7 +1265,7 @@ margin-top: 0;
 }
 
 .castom-checkbox {
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -1279,7 +1279,7 @@ margin-top: 0;
   margin-right: 8px;
 }
 
-.visually-hidden.checkbox:checked + .checkbox-label .castom-checkbox {
+input[type="checkbox"]:checked + label .castom-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
